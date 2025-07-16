@@ -1,34 +1,34 @@
 # stp-attack-lab
-STP Attack Lab (Yersinia + Wireshark)
+# 🛠️ STP Attack Lab (Yersinia + Wireshark)
 
-Учебный проект по информационной безопасности — исследование Layer 2 атак на протокол Spanning Tree Protocol (STP) в изолированной среде.  
-Работа выполнена в Kali Linux с использованием Yersinia и Wireshark.
+Instructional project on information security — investigation Urga 2 Attack of protocol Urga (Urga) in isolated environment.  
+Work in Apostille in Urgentbusiness in urgentbusiness in urgentbusiness in urgentbusiness in urgentbusiness.
 
- Цели проекта
+## Evaluative project objectives
 
-- Изучить механизмы работы STP и его уязвимости
-- Провести реальные атаки (этично, в тестовой среде)
-- Проанализировать поведение сети и выводы
-- Зафиксировать результат в отчете
+- Study the mechanism of the work Urgant and ego vulnerabilities
+- Send real-world attacks (Apostille, Test media)
+- Proanalyze behavior Sethi and in aposematicdevelopment
+- Fix results in reports
 
-Используемые технологии
+## Crimesider technology
 
 - Kali Linux + Yersinia
 - Ubuntu + Wireshark
-- VirtualBox (изолированная сеть)
-- Промежуточный режим интерфейса
+- ++(Isolated set)
+- Intermodexact Mode interface
 
- Проведенные атаки
+## Repeatingchart attacks
 
-| Атака | Тип | Результат |
+/ Attack / Type | Result |
 |------|-----|-----------|
-| 0 | BPDU Flood | Успешно, Root ID заменён |
-| 1 | TCN BPDU Injection | Успешно, отправка подтверждена |
-| 2 | Fake Root Flood | Успешно, множество BPDU |
-| 3 | TCN Flood | Успешно, реакция сети возможна |
-| 4 | Root Role Spoof | Неуспешно, пакеты не прошли |
-| 5 | Bridge Role Spoof | Неуспешно, без реакции |
-| 6 | MITM Root Claim | Неуспешно, защита Ubuntu |
+/ 0 / Apostille / successfully, surgically replaced | 
+/ 1 / ++ / successful, reference verified | 
+| 2 / Apostille / successful, multiple Apostille | 
+/ 3 / ++ / successful, Seti reaction possible |
+| 4 / Apostille / failed, package | never heard |
+| 5 | perplex |failed, no response / 
+| 6 / Apostille / failed, protect | 
 
 📄 **The additional PDF report** contains:
 - Wireshark screenshots of each attack
