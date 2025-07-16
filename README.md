@@ -34,4 +34,4 @@ Work in Apostille in Urgentbusiness in urgentbusiness in urgentbusiness in urgen
 - Wireshark screenshots of each attack
 - A more extended description of the processes
 - Conclusions, protection analysis, recommendations
-[Download PDF](./STP_Full_Report.pdf)
+[Download PDF](./stp-attack-lab.docx)
