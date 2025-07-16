@@ -18,7 +18,7 @@ Attacks 0–6 were tested as part of an ethical hacking demonstration.
 
  3. Attack Descriptions
 
- 🔸 Attack 0 – Configuration BPDU Flood
+  Attack 0 – Configuration BPDU Flood
 
 - **Objective:** Send many BPDUs to disrupt STP operation
 - **Process:** 5x attack in Yersinia, `stp` filter in Wireshark
@@ -62,7 +62,7 @@ Attacks 0–6 were tested as part of an ethical hacking demonstration.
 
 - **Objective:** Declare attacker as Root Bridge
 - **Process:** Attack sent with Priority = 0 and fake MAC
-- **Captured:** ❌ No packets seen in Wireshark
+- **Captured:**  No packets seen in Wireshark
 - **Conclusion:** Ubuntu likely filters STP traffic or doesn’t participate. Attack was sent but not received.
 
 ---
@@ -71,7 +71,7 @@ Attacks 0–6 were tested as part of an ethical hacking demonstration.
 
 - **Objective:** Pretend to be regular STP switch (not Root)
 - **Process:** BPDU sent with regular bridge role
-- **Captured:** ❌ No STP response
+- **Captured:**  No STP response
 - **Conclusion:** Like Attack 4 — no reaction. Could be due to Ubuntu not processing foreign BPDUs.
 
 ---
@@ -80,7 +80,7 @@ Attacks 0–6 were tested as part of an ethical hacking demonstration.
 
 - **Objective:** Become Root and intercept L2 traffic
 - **Process:** Sent fake BPDUs with low priority + custom MAC
-- **Captured:** ❌ Not in Wireshark
+- **Captured:**  Not in Wireshark
 - **Conclusion:** No network rebuild. MITM failed — likely due to STP security on Ubuntu.
 
 ---
@@ -97,26 +97,26 @@ Wireshark was used with the `stp` filter. Fields analyzed:
 
  Conclusions
 
-✅ **Successful Attacks:**
+ **Successful Attacks:**
 
 - Attack 0 – BPDU Flood  
 - Attack 1 – TCN Injection  
 - Attack 2 – Fake Root  
 - Attack 3 – TCN Flood
 
-❌ **Unsuccessful Attacks:**
+ **Unsuccessful Attacks:**
 
 - Attack 4, 5, 6 — due to STP protection or filtering on Ubuntu
 
-🔐 **Security Findings:**
+ **Security Findings:**
 
 - Ubuntu likely uses BPDU filtering or ignores STP traffic
 - Network may include BPDU Guard, Root Guard, or MAC filtering
 
-📌 **For Red Team:**  
+ **For Red Team:**  
 These results show that if protection is weak, STP-based attacks are effective and can lead to DoS or MITM.
 
-📌 **For Blue Team / SOC:**  
+ **For Blue Team / SOC:**  
 Monitor changes in Root ID and TCN frequency — these are key indicators of STP attacks.
 
 ---
