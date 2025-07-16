@@ -1,5 +1,5 @@
 # stp-attack-lab
-# 🛠️ STP Attack Lab (Yersinia + Wireshark)
+#  STP Attack Lab (Yersinia + Wireshark)
 
 Instructional project on information security — investigation Urga 2 Attack of protocol Urga (Urga) in isolated environment.  
 Work in Apostille in Urgentbusiness in urgentbusiness in urgentbusiness in urgentbusiness in urgentbusiness.
